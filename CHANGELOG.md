@@ -1,0 +1,21 @@
+
+
+# Changelog
+
+## \[Unreleased] — Early Development Stage
+
+* 🚧 Project just started, only the basic skeleton is ready.
+* 🔤 Currently, only simple ASCII art and placeholder text are implemented.
+* ⚙️ No real system information gathering code written yet.
+* 🛠️ No actual functionality; just the foundation is being built.
+* 📚 Documentation and config files are still drafts.
+* ❗ This project is not ready for testing or use; major changes are expected.
+
+## Planned Improvements
+
+* Adding real system info fetching features.
+* Developing cross-platform support and compatibility.
+* Creating meaningful output for users.
+* Implementing configuration and customization options.
+* Starting testing and debugging phases.
+
