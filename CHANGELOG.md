@@ -19,3 +19,12 @@
 * Implementing configuration and customization options.
 * Starting testing and debugging phases.
 
+
+## Unreleased v2
+
+* **Project structure refactored**
+* **`checker` package** added for configuration checks
+* **`preferences` package** introduced for user settings
+* File names and internal organization improved
+* Main application moved to `src/main` directory
+* bubleTea library added

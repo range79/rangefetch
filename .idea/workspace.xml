@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c12bd09e-4c49-43f9-9355-058831fa14d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/checker/config_finder.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/checker/installation_check.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/model/config.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/model/selection.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/setup/auto/automatic_installer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ada.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ada.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/adelie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/adelie.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/aeros.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/aeros.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/afterglow.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/afterglow.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/aix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/aix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/almalinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/almalinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/alpine.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/alpine.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/alpine2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/alpine2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/alpine2_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/alpine2_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/alpine3_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/alpine3_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/alpine_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/alpine_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/alter.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/alter.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/altlinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/altlinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/amazon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/amazon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/amazon_linux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/amazon_linux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/amogos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/amogos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/anarchy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/anarchy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/android.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/android.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/android_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/android_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/anduinos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/anduinos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/antergos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/antergos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/antix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/antix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/aoscos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/aoscos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/aoscos_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/aoscos_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/aoscosretro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/aoscosretro.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/aoscosretro_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/aoscosretro_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/aperture.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/aperture.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/apricity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/apricity.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/arch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arch.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/arch2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arch2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/arch3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arch3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/arch_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arch_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/arch_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arch_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/archbox.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/archbox.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/archcraft.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/archcraft.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/archcraft2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/archcraft2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/archlabs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/archlabs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/archstrike.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/archstrike.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/arco.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arco.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/arco_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arco_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/arkane.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arkane.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/armbian.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/armbian.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/armbian2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/armbian2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/arselinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arselinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/artix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/artix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/artix2_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/artix2_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/artix_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/artix_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/arya.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arya.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/asahi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/asahi.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/asahi2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/asahi2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/aster.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/aster.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/asteroidos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/asteroidos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/astos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/astos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/astra_linux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/astra_linux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/athenaos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/athenaos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/athenaos_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/athenaos_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/aurora.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/aurora.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/azos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/azos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/bedrock.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bedrock.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/bedrock_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bedrock_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/biglinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/biglinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/bitrig.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bitrig.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/blackarch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/blackarch.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/blackmesa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/blackmesa.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/blackpanther.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/blackpanther.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/blag.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/blag.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/blankon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/blankon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/bluelight.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bluelight.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/bodhi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bodhi.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/bonsai.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bonsai.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/bredos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bredos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/bsd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bsd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/bunsenlabs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/bunsenlabs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cachyos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cachyos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cachyos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cachyos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/calculate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/calculate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/calinixos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/calinixos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/calinixos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/calinixos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/carbs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/carbs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cbl_mariner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cbl_mariner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/celos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/celos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/center.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/center.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/centos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/centos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/centos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/centos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cereus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cereus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/chakra.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/chakra.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/chaletos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/chaletos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/chapeau.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/chapeau.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/chimera_linux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/chimera_linux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/chonkysealos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/chonkysealos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/chrom.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/chrom.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cleanjaro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cleanjaro.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cleanjaro_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cleanjaro_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/clear_linux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clear_linux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/clearos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clearos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/clover.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/clover.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cobalt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cobalt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/codex.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/codex.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/condres.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/condres.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cosmic.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cosmic.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/crux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/crux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/crux_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/crux_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/crystal.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/crystal.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cucumber.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cucumber.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cuerdos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cuerdos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cutefishos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cutefishos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cuteos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cuteos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cyberos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cyberos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/cycledream.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cycledream.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/dahlia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/dahlia.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/darkos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/darkos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/debian.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/debian.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/debian_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/debian_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/deepin.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/deepin.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/desaos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/desaos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/devuan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/devuan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/devuan_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/devuan_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/dietpi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/dietpi.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/dracos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/dracos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/dragonfly.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/dragonfly.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/dragonfly_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/dragonfly_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/dragonfly_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/dragonfly_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/drauger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/drauger.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/droidian.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/droidian.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/elbrus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elbrus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/elementary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elementary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/elementary_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elementary_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/elive.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/elive.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/encryptos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/encryptos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/endeavouros.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/endeavouros.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/endeavouros_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/endeavouros_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/endless.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/endless.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/enso.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/enso.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/eshanizedos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/eshanizedos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/eurolinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/eurolinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/evolinx.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/evolinx.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/evolutionos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/evolutionos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/evolutionos_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/evolutionos_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/evolutionos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/evolutionos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/eweos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/eweos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/exherbo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/exherbo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/exodia_predator.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/exodia_predator.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/fastfetch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fastfetch.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/fedora.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fedora.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/fedora_coreos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fedora_coreos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/fedora_kinoite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fedora_kinoite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/fedora_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fedora_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/fedora_sericea.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fedora_sericea.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/fedora_silverblue.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fedora_silverblue.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/fedora_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/fedora_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/femboyos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/femboyos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/feren.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/feren.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/filotimo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/filotimo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/finnix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/finnix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/floflis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/floflis.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/freebsd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/freebsd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/freebsd_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/freebsd_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/freemint.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/freemint.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/frugalware.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/frugalware.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/funtoo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/funtoo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/furreto.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/furreto.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/galliumos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/galliumos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/garuda.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/garuda.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/garuda_dragon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/garuda_dragon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/garuda_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/garuda_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/gentoo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gentoo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/gentoo_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gentoo_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ghostbsd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ghostbsd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/glaucus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/glaucus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/gnewsense.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gnewsense.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/gnome.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gnome.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/gnu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gnu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/gobolinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gobolinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/goldendoglinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/goldendoglinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/grapheneos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/grapheneos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/grombyang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/grombyang.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/guix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/guix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/guix_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/guix_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/haiku.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/haiku.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/haiku2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/haiku2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/haiku_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/haiku_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/hamonikr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hamonikr.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/hardclanz.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hardclanz.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/hash.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hash.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/hce.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hce.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/heliumos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/heliumos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/huayra.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/huayra.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/hybrid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hybrid.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/hydra.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hydra.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/hydroos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hydroos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/hyperbola.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hyperbola.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/hyperbola_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hyperbola_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/hypros.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/hypros.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/iglunix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/iglunix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/instantos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/instantos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/interix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/interix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/irix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/irix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ironclad.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ironclad.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/itc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/itc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/januslinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/januslinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kaisen.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kaisen.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kali.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kali.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kali_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kali_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kaos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kaos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kdelinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kdelinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kdeneon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kdeneon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kernelos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kernelos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kibojoe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kibojoe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kiss.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kiss.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kogaion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kogaion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/korora.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/korora.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/krassos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/krassos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kslinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kslinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kubuntu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kubuntu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/kylin.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/kylin.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/lainos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lainos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/langitketujuh.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/langitketujuh.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/laxeros.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/laxeros.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/lede.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lede.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/lfs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lfs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/libreelec.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/libreelec.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/lilidog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lilidog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/lingmo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lingmo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/linspire.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/linspire.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/linux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/linux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/linux_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/linux_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/linuxlite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/linuxlite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/linuxlite_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/linuxlite_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/linuxmint.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/linuxmint.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/linuxmint_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/linuxmint_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/linuxmint_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/linuxmint_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/live_raizo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/live_raizo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/lliurex.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lliurex.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/lmde.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lmde.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/locos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/locos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/lubuntu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lubuntu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/lunar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/lunar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/macos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/macos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/macos2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/macos2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/macos2_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/macos2_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/macos3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/macos3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/macos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/macos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/mageia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mageia.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/mageia_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mageia_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/magix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/magix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/magpieos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/magpieos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/mainsailos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mainsailos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/mainsailos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mainsailos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/mandriva.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mandriva.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/manjaro.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/manjaro.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/manjaro_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/manjaro_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/massos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/massos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/matuusos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/matuusos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/maui.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/maui.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/mauna.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mauna.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/meowix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/meowix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/mer.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mer.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/midnightbsd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/midnightbsd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/midos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/midos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/midos_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/midos_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/minix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/minix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/miracle_linux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/miracle_linux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/mos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/msys2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/msys2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/mx.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mx.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/mx2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mx2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/mx_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/mx_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/namib.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/namib.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nekos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nekos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/neptune.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/neptune.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/netbsd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/netbsd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/netbsd2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/netbsd2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/netbsd_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/netbsd_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/netrunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/netrunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nexalinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nexalinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nitrux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nitrux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nixos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nixos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nixos_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nixos_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nixos_old_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nixos_old_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nixos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nixos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nobara.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nobara.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nomadbsd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nomadbsd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nuros.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nuros.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nurunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nurunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/nutyx.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/nutyx.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/obarun.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/obarun.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/obrevenge.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/obrevenge.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/omnios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/omnios.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/opak.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/opak.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/openbsd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/openbsd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/openbsd_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/openbsd_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/openeuler.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/openeuler.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/openindiana.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/openindiana.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/openkylin.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/openkylin.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/openmamba.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/openmamba.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/openmandriva.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/openmandriva.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/openstage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/openstage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/opensuse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/opensuse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/opensuse_leap.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/opensuse_leap.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/opensuse_leap_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/opensuse_leap_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/opensuse_microos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/opensuse_microos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/opensuse_slowroll.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/opensuse_slowroll.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/opensuse_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/opensuse_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/opensuse_tumbleweed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/opensuse_tumbleweed.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/opensuse_tumbleweed_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/opensuse_tumbleweed_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/opensuse_tumbleweed_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/opensuse_tumbleweed_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/openwrt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/openwrt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/opnsense.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/opnsense.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/oracle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/oracle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/orchid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/orchid.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/orchid_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/orchid_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/oreon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/oreon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/os_elbrus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/os_elbrus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/osmc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/osmc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pacbsd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pacbsd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/panwah.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/panwah.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/parabola.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/parabola.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/parabola_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/parabola_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/parch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/parch.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pardus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pardus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/parrot.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/parrot.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/parsix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/parsix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pcbsd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pcbsd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pclinuxos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pclinuxos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pearos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pearos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pengwin.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pengwin.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pentoo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pentoo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/peppermint.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/peppermint.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/peropesis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/peropesis.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/phyos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/phyos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pikaos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pikaos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pisi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pisi.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pnm_linux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pnm_linux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pop.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pop.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pop_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pop_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/porteus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/porteus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/postmarketos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/postmarketos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/postmarketos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/postmarketos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/proxmox.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/proxmox.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/puffos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/puffos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/puppy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/puppy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pureos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pureos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/pureos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/pureos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/q4os.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/q4os.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/qts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/qts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/qubes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/qubes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/qubyt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/qubyt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/quibian.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/quibian.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/quirinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/quirinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/radix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/radix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/raspbian.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/raspbian.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/raspbian_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/raspbian_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ravynos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ravynos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/rebornos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/rebornos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/rebornos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/rebornos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/redcore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/redcore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/redos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/redos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/redos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/redos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/redstar.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/redstar.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/refracted_devuan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/refracted_devuan.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/regata.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/regata.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/regolith.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/regolith.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/rhaymos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/rhaymos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/rhel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/rhel.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/rhel_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/rhel_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/rhel_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/rhel_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/rhino.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/rhino.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/rocky.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/rocky.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/rocky_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/rocky_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/rosa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/rosa.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/sabayon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sabayon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/sabotage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sabotage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/sailfish.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sailfish.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/salentos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/salentos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/salientos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/salientos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/salix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/salix.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/sambabox.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sambabox.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/sasanqua.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sasanqua.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/scientific.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scientific.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/semc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/semc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/septor.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/septor.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/serene.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/serene.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/serpent_os.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/serpent_os.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/sharklinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sharklinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/shastraos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shastraos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/shebang.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/shebang.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/siduction.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/siduction.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/skiffos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/skiffos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/slackel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/slackel.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/slackware.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/slackware.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/slackware_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/slackware_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/sleeperos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sleeperos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/sleeperos_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sleeperos_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/slitaz.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/slitaz.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/smartos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/smartos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/snigdhaos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/snigdhaos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/soda.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/soda.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/solaris.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/solaris.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/solaris_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/solaris_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/solus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/solus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/source_mage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/source_mage.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/sparky.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sparky.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/spoinkos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/spoinkos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/star.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/star.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/starry.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/starry.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/steamdeck.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/steamdeck.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/steamdeck_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/steamdeck_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/steamos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/steamos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/stock_linux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/stock_linux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/sulin.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sulin.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/summitos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/summitos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/suse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/suse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/swagarch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/swagarch.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/t2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/t2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/t2_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/t2_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/tails.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tails.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/tatra.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tatra.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/tearch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tearch.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/tileos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tileos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/torizoncore.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/torizoncore.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/trisquel.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/trisquel.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/tuxedo_os.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/tuxedo_os.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/twister.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/twister.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ublinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ublinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ublinux_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ublinux_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_budgie.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_budgie.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_cinnamon.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_cinnamon.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_gnome.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_gnome.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_kylin.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_kylin.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_mate.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_mate.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_old.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_old.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_old2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_old2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_old2_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_old2_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_studio.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_studio.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_sway.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_sway.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_touch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_touch.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ubuntu_unity.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ubuntu_unity.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ultramarine.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ultramarine.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/ultramarine_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/ultramarine_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/unifi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/unifi.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/univalent.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/univalent.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/univention.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/univention.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/unknown.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/unknown.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/uos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/uos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/urukos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/urukos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/uwuntu.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/uwuntu.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/valhalla.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/valhalla.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/vanilla.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vanilla.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/vanilla2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vanilla2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/vanilla_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vanilla_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/venom.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/venom.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/venom_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/venom_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/vnux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vnux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/void.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/void.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/void2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/void2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/void2_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/void2_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/void_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/void_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/vzlinux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/vzlinux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/wii_linux.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wii_linux.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/windows.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/windows.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/windows_11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/windows_11.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/windows_11_small.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/windows_11_small.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/windows_2025.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/windows_2025.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/windows_8.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/windows_8.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/windows_95.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/windows_95.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/wolfos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/wolfos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/xcp_ng.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/xcp_ng.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/xenia.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/xenia.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/xeroarch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/xeroarch.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/xferience.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/xferience.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/yiffos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/yiffos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/zorin.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/zorin.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ascii/zos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/zos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/check_config_directory.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checker/check_config_directory.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker/installation_check.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/auto/automatic_installer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/install_mode.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/setup/install_mode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/manual/manual_installer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/setup/manual/manual_installer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup/setup.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/setup/setup.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.24.3" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="pGSAxAsa" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2xxGk16w2K2Y6uyzrfFY7jsZjZ4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build main.go.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "git-widget-placeholder": "dev",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "/home/range/rangefetch/rangefetch",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/home/range/rangefetch/rangefetch/main.go",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/checker" />
+      <recent name="$PROJECT_DIR$/assets" />
+      <recent name="$PROJECT_DIR$/src/main" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="rangefetch" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="rangefetch" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c12bd09e-4c49-43f9-9355-058831fa14d2" name="Changes" comment="" />
+      <created>1748872451653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748872451653</updated>
+      <workItem from="1748872452715" duration="8806000" />
+      <workItem from="1748888119249" duration="9000" />
+      <workItem from="1748888131343" duration="16000" />
+      <workItem from="1748888155745" duration="5000" />
+      <workItem from="1748888167723" duration="26000" />
+      <workItem from="1748888206077" duration="20000" />
+      <workItem from="1748888252496" duration="39000" />
+      <workItem from="1748888321538" duration="16000" />
+      <workItem from="1748888339557" duration="3391000" />
+      <workItem from="1748896411418" duration="1866000" />
+      <workItem from="1748915606002" duration="4690000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

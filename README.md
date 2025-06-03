@@ -70,3 +70,5 @@ We appreciate every kind of contribution and your ideas. Let’s build this toge
 
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0). See the [LICENSE](./LICENSE) file for details.
 
+
+# For Changelog click [here](./CHANGELOG.md)

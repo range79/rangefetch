@@ -2,8 +2,8 @@ package setup
 
 import (
 	"log"
-	"rangefetch/setup/auto"
-	"rangefetch/setup/manual"
+	"rangefetch/src/main/setup/auto"
+	"rangefetch/src/main/setup/manual"
 	"strings"
 )
 
@@ -19,6 +19,7 @@ func InstallMode(input string) {
 	default:
 		{
 			log.Printf("Error: Invalid choice '%s'. Please try again.\n", input)
+			Start()
 		}
 
 	}

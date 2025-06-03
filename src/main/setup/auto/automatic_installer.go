@@ -1,0 +1,5 @@
+package auto
+
+func Install() {
+
+}
