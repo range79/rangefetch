@@ -2,6 +2,7 @@ package checker
 
 import (
 	"log"
+	"rangefetch/src/main/common"
 	"rangefetch/src/main/setup"
 )
 
@@ -11,7 +12,7 @@ func ConfigFinder() string {
 		setup.Start()
 	}
 
-	name, err := ConfigPath()
+	name, err := common.ConfigPath()
 	if err != nil {
 		log.Println(err)
 		return ""

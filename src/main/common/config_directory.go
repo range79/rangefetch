@@ -1,4 +1,4 @@
-package checker
+package common
 
 import (
 	"os"

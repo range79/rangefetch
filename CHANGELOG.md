@@ -28,3 +28,8 @@
 * File names and internal organization improved
 * Main application moved to `src/main` directory
 * bubleTea library added
+
+## Unrelased v3
+* Config go refactored
+* automatic json generator implemented
+* 

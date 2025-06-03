@@ -2,13 +2,14 @@ package checker
 
 import (
 	"os"
+	"rangefetch/src/main/common"
 )
 
 func CheckFileExits() bool {
-	configPath, err := ConfigPath()
+	configPath, err := common.ConfigPath()
 
 	stat, err := os.Stat(configPath)
-	//if dir not exits
+
 	if os.IsNotExist(err) {
 		return false
 	}
