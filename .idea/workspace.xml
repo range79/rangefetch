@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c12bd09e-4c49-43f9-9355-058831fa14d2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/app/get_banner.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/common/get_config_data.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/info/get_os.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/info/system_Info.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/info/util/cpu_Info.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/info/util/gpu_Info.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/info/util/local_ip.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/info/util/memory_info.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/info/util/public_ip.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checker/check_config_directory.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/config_directory.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checker/config_finder.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checker/config_finder.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/checker/installation_check.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checker/installation_check.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/model/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/model/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/setup/auto/automatic_installer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/setup/auto/automatic_installer.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/setup/manual/manual_installer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/setup/manual/manual_installer.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +50,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build get_banner.go.executor": "Run",
+    "Go Build.go build get_distro_name.go.executor": "Run",
+    "Go Build.go build init.go.executor": "Run",
     "Go Build.go build main.go.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -63,11 +73,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/info" />
+      <recent name="$PROJECT_DIR$/src/main/info/util" />
+      <recent name="$PROJECT_DIR$/src/main" />
       <recent name="$PROJECT_DIR$/src/main/common" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/checker" />
-      <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunManager">
@@ -114,7 +124,8 @@
       <workItem from="1748888321538" duration="16000" />
       <workItem from="1748888339557" duration="3391000" />
       <workItem from="1748896411418" duration="1866000" />
-      <workItem from="1748915606002" duration="13860000" />
+      <workItem from="1748915606002" duration="19197000" />
+      <workItem from="1749032692108" duration="7101000" />
     </task>
     <servers />
   </component>

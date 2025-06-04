@@ -2,17 +2,10 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"rangefetch/src/main/checker"
-	"time"
+	"rangefetch/src/main/info"
 )
 
 func main() {
-	if len(os.Args) > 1 && os.Args[1] == "--settings" {
-		time.Sleep(120)
-		fmt.Println("xx")
-	} else {
-		checker.ConfigFinder()
-	}
+	fmt.Println(info.GetSystemInfo())
 
 }

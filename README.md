@@ -42,8 +42,8 @@ There is no official stable release yet. For now, you can build the tool from so
 ### Building from Source Example
 
 ```bash
-git clone https://github.com/your-username/rangefetch.git
-cd rangefetch
+git clone https://github.com/range79/rangefetch.git
+cd rangefetch/src/main
 go build -o rangefetch
 ./rangefetch
 ```
