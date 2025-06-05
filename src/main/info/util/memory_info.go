@@ -92,7 +92,6 @@ func formatMemory(bytes float64) string {
 	return strconv.FormatFloat(gb, 'f', 1, 64) + " GB"
 }
 
-// Genel bellek bilgisi
 func GetMemoryInfo() string {
 	switch runtime.GOOS {
 	case "linux":

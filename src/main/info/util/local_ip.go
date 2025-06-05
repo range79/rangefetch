@@ -22,7 +22,6 @@ func GetLocalIP() string {
 			continue
 		}
 
-		// Sadece 192.168.x.x adreslerini döndür
 		if strings.HasPrefix(ip.String(), "192.168.") {
 			return ip.String()
 		}

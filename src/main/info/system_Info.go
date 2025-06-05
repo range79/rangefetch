@@ -3,42 +3,64 @@ package info
 import (
 	"fmt"
 	"os"
-	"os/exec"
 	"rangefetch/src/main/info/util"
-	"runtime"
 	"strings"
 )
 
 func GetSystemInfo() string {
+	const bannerWidth = 35
+	const spaceBetween = 3
+	const maxTotalWidth = 96
+
+	bannerLines := strings.Split(LoadBannerFromAssets(), "\n")
+
+	infoLines := []string{
+		fmt.Sprintf("OS: %s", GetOSName()),
+	}
+
+	if hostname, err := os.Hostname(); err == nil {
+		infoLines = append(infoLines, fmt.Sprintf("Hostname: %s", hostname))
+	}
+
+	infoLines = append(infoLines,
+		fmt.Sprintf("Cpu: %s", util.GetFormattedCPUInfo()),
+		fmt.Sprintf("Local IP: %s", util.GetLocalIP()),
+		fmt.Sprintf("Public IP: %s", util.GetPublicIP()),
+		fmt.Sprintf("Memory: %s", util.GetMemoryInfo()),
+	)
+
+	gpuInfo := util.GetFormattedGPUInfo()
+	gpuLines := strings.Split(strings.TrimSpace(gpuInfo), "\n")
+	infoLines = append(infoLines, gpuLines...)
+
+	// Uptime da son satır olarak ekle
+	infoLines = append(infoLines, fmt.Sprintf("Uptime: %s", util.GetUptime()))
+
+	if len(infoLines) > len(bannerLines) {
+		diff := len(infoLines) - len(bannerLines)
+		for i := 0; i < diff; i++ {
+			bannerLines = append(bannerLines, "")
+		}
+	}
+
 	var sb strings.Builder
 
-	sb.WriteString(fmt.Sprintf("OS: %s\n", GetOSName()))
-	hostname, err := os.Hostname()
-	if err == nil {
-		sb.WriteString(fmt.Sprintf("Hostname: %s\n", hostname))
-	}
-	sb.WriteString(fmt.Sprintf("%v\n", util.GetFormattedCPUInfo()))
-	sb.WriteString(fmt.Sprintf("Local IP: %v\n", util.GetLocalIP()))
-	sb.WriteString(fmt.Sprintf("Public IP: %s\n", util.GetPublicIP()))
-	sb.WriteString(fmt.Sprintf("Memory: %s\n", util.GetMemoryInfo()))
-	sb.WriteString(fmt.Sprintf("Gpu: %s", util.GetFormattedGPUInfo()))
+	for i := 0; i < len(bannerLines); i++ {
+		bannerFormatted := fmt.Sprintf("%-*s", bannerWidth, bannerLines[i])
 
-	if runtime.GOOS == "linux" {
-		sb.WriteString(fmt.Sprintf("Uptime: %s\n", getUptimeLinux()))
+		infoLine := ""
+		if i < len(infoLines) {
 
-	} else if runtime.GOOS == "windows" {
+			availableWidth := maxTotalWidth - bannerWidth - spaceBetween
+			line := infoLines[i]
+			if len(line) > availableWidth {
+				line = line[:availableWidth-3] + "..."
+			}
+			infoLine = line
+		}
 
-	} else if runtime.GOOS == "darwin" {
-
+		sb.WriteString(fmt.Sprintf("%s%s%s\n", bannerFormatted, strings.Repeat(" ", spaceBetween), infoLine))
 	}
 
 	return sb.String()
-}
-
-func getUptimeLinux() string {
-	out, err := exec.Command("uptime", "-p").Output()
-	if err != nil {
-		return "N/A"
-	}
-	return strings.TrimSpace(string(out))
 }

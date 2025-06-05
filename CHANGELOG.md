@@ -57,3 +57,7 @@
     * `local_ip.go`
     * `public_ip.go`
 
+## Unreleasedv 5
+* get_banner.go renamed to banner.go and moved to info/util package
+* get_config_data.go renamed to config_data.go and moved to checker package
+* Added logo color changing feature

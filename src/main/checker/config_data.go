@@ -1,15 +1,14 @@
-package common
+package checker
 
 import (
 	"encoding/json"
 	"log"
 	"os"
-	"rangefetch/src/main/checker"
 	m "rangefetch/src/main/model"
 )
 
-func Start() m.Config {
-	configPath := checker.ConfigFinder()
+func ConfigData() m.Config {
+	configPath := ConfigFinder()
 
 	file, err := os.Open(configPath)
 	if err != nil {
@@ -21,6 +20,6 @@ func Start() m.Config {
 	if err := json.NewDecoder(file).Decode(&config); err != nil {
 		log.Fatal("Error: Failed to parse config.json:", err)
 	}
-	
+
 	return config
 }

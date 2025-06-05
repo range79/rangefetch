@@ -139,5 +139,5 @@ func GetFormattedCPUInfo() string {
 		return "Unsupported OS"
 	}
 
-	return "CPU: " + model + " (" + strconv.Itoa(cores) + ") @ " + speed
+	return model + " (" + strconv.Itoa(cores) + ") @ " + speed
 }

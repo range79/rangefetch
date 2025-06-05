@@ -5,20 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c12bd09e-4c49-43f9-9355-058831fa14d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/app/get_banner.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/common/get_config_data.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/info/get_os.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/info/system_Info.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/info/util/cpu_Info.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/info/util/gpu_Info.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/info/util/local_ip.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/info/util/memory_info.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/info/util/public_ip.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/app/start.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/info/banner.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/info/util/uptime_info.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/arch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arch.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/app/get_banner.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/common/get_config_data.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checker/config_data.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/info/system_Info.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/info/system_Info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/info/util/cpu_Info.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/info/util/cpu_Info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/info/util/gpu_Info.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/info/util/gpu_Info.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/info/util/local_ip.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/info/util/local_ip.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/info/util/memory_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/info/util/memory_info.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/setup/manual/manual_installer.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/setup/manual/manual_installer.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +36,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/sdk/go1.24.3/src/encoding/json/encode.go" root0="SKIP_INSPECTION" />
+    <setting file="file://$USER_HOME$/sdk/go1.24.3/src/runtime/extern.go" root0="SKIP_INSPECTION" />
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="pGSAxAsa" />
   </component>
@@ -47,37 +51,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Build.go build get_banner.go.executor": "Run",
-    "Go Build.go build get_distro_name.go.executor": "Run",
-    "Go Build.go build init.go.executor": "Run",
-    "Go Build.go build main.go.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "git-widget-placeholder": "dev",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "/home/range/rangefetch/rangefetch",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "/home/range/rangefetch/rangefetch/main.go",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build get_banner.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build get_distro_name.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build init.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build main.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build system_Info.go.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/range/rangefetch/rangefetch&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/range/rangefetch/rangefetch/main.go&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/common" />
+      <recent name="$PROJECT_DIR$/src/main/checker" />
       <recent name="$PROJECT_DIR$/src/main/info" />
       <recent name="$PROJECT_DIR$/src/main/info/util" />
       <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/common" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager">
@@ -87,6 +92,15 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build system_Info.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="rangefetch" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="rangefetch" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/main/info/system_Info.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -125,7 +139,9 @@
       <workItem from="1748888339557" duration="3391000" />
       <workItem from="1748896411418" duration="1866000" />
       <workItem from="1748915606002" duration="19197000" />
-      <workItem from="1749032692108" duration="7101000" />
+      <workItem from="1749032692108" duration="14630000" />
+      <workItem from="1749089669063" duration="29000" />
+      <workItem from="1749130416278" duration="1974000" />
     </task>
     <servers />
   </component>
