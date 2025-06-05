@@ -1,11 +1,8 @@
 package main
 
-import (
-	"fmt"
-	"rangefetch/src/main/info"
-)
+import "rangefetch/src/main/app"
 
 func main() {
-	fmt.Println(info.GetSystemInfo())
+	app.Init()
 
 }

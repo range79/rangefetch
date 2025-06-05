@@ -97,7 +97,7 @@ func GetGPUInfoWindows() string {
 	}
 	var sb strings.Builder
 	for i, name := range names {
-		sb.WriteString(fmt.Sprintf("GPU %d: %s\n", i, name))
+		sb.WriteString(fmt.Sprintf("%d: %s\n", i, name))
 	}
 	return sb.String()
 }
