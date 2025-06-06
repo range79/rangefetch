@@ -3,11 +3,15 @@ package auto
 import (
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"rangefetch/src/main/common"
 	"rangefetch/src/main/model"
+)
+
+const (
+	ownerCanReadWriteGroupOtherCanReadOnly    os.FileMode = 0644
+	ownerCanDoAllGroupOtherCanReadExecuteOnly os.FileMode = 0755
 )
 
 func Install() {
@@ -40,7 +44,7 @@ func Install() {
 
 	dir := filepath.Dir(path)
 
-	err = os.MkdirAll(dir, 0755)
+	err = os.MkdirAll(dir, ownerCanDoAllGroupOtherCanReadExecuteOnly)
 	if err != nil {
 		fmt.Printf("Error creating directories: %v\n", err)
 		return
@@ -52,7 +56,7 @@ func Install() {
 		return
 	}
 
-	err = ioutil.WriteFile(path, jsonData, 0644)
+	err = os.WriteFile(path, jsonData, ownerCanReadWriteGroupOtherCanReadOnly)
 	if err != nil {
 		fmt.Printf("Error writing file: %v\n", err)
 		return
