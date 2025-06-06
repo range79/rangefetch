@@ -8,6 +8,9 @@ import (
 	"runtime"
 	"strconv"
 	"strings"
+
+	"golang.org/x/text/cases"
+	"golang.org/x/text/language"
 )
 
 func cleanCPUModel(raw string) string {
@@ -19,7 +22,10 @@ func cleanCPUModel(raw string) string {
 
 	re := regexp.MustCompile(`\s+`)
 	cleaned = re.ReplaceAllString(cleaned, " ")
-	return strings.Title(strings.TrimSpace(cleaned))
+	trimmed := strings.TrimSpace(cleaned)
+	ttlCsr := cases.Title(language.English)
+	ttl := ttlCsr.String(trimmed)
+	return ttl
 }
 
 func getCPUInfoLinux() string {
