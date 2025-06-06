@@ -38,14 +38,14 @@ func GetSystemInfo() string {
 
 	if len(infoLines) > len(bannerLines) {
 		diff := len(infoLines) - len(bannerLines)
-		for i := 0; i < diff; i++ {
+		for range diff {
 			bannerLines = append(bannerLines, "")
 		}
 	}
 
 	var sb strings.Builder
 
-	for i := 0; i < len(bannerLines); i++ {
+	for i := range len(bannerLines) {
 		bannerFormatted := fmt.Sprintf("%-*s", bannerWidth, bannerLines[i])
 
 		infoLine := ""
