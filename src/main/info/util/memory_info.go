@@ -46,8 +46,8 @@ func getMemoryInfoDarwin() string {
 	pageSize := 4096.0
 	usedPages := 0.0
 
-	lines := bytes.Split(vmStat, []byte("\n"))
-	for _, line := range lines {
+	lines := bytes.SplitSeq(vmStat, []byte("\n"))
+	for line := range lines {
 		if bytes.Contains(line, []byte("Pages active")) ||
 			bytes.Contains(line, []byte("Pages wired down")) ||
 			bytes.Contains(line, []byte("Pages speculative")) {
