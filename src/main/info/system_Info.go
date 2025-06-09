@@ -14,15 +14,14 @@ func GetSystemInfo() string {
 
 	bannerLines := strings.Split(LoadBannerFromAssets(), "\n")
 
-	infoLines := []string{
-		fmt.Sprintf("OS: %s", GetOSName()),
-	}
+	infoLines := []string{}
 
 	if hostname, err := os.Hostname(); err == nil {
 		infoLines = append(infoLines, fmt.Sprintf("Hostname: %s", hostname))
 	}
 
 	infoLines = append(infoLines,
+		fmt.Sprintf("OS: %s", GetOSName()),
 		fmt.Sprintf("Cpu: %s", util.GetFormattedCPUInfo()),
 		fmt.Sprintf("Local IP: %s", util.GetLocalIP()),
 		fmt.Sprintf("Public IP: %s", util.GetPublicIP()),

@@ -26,12 +26,12 @@ func getLinuxDistro() string {
 		return "Linux"
 	}
 
-	lines := strings.Split(string(data), "\n")
-	for _, line := range lines {
+	lines := strings.SplitSeq(string(data), "\n")
+	for line := range lines {
 		if strings.HasPrefix(line, "ID=") {
 
 			val := strings.TrimPrefix(line, "ID=")
-			val = strings.Trim(val, `"`)
+			val = strings.Trim(val, "")
 			return val
 		}
 	}
