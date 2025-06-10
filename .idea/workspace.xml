@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c12bd09e-4c49-43f9-9355-058831fa14d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/app/start.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/info/banner.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/info/util/uptime_info.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/arch.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arch.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/app/get_banner.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/common/get_config_data.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/checker/config_data.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/arch2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/arch2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/info/get_os.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/info/get_os.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/info/system_Info.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/info/system_Info.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/info/util/cpu_Info.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/info/util/cpu_Info.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/info/util/gpu_Info.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/info/util/gpu_Info.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/info/util/local_ip.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/info/util/local_ip.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/info/util/memory_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/info/util/memory_info.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +132,12 @@
       <workItem from="1748915606002" duration="19197000" />
       <workItem from="1749032692108" duration="14630000" />
       <workItem from="1749089669063" duration="29000" />
-      <workItem from="1749130416278" duration="1974000" />
+      <workItem from="1749130416278" duration="3680000" />
+      <workItem from="1749160480549" duration="3064000" />
+      <workItem from="1749164723643" duration="2178000" />
+      <workItem from="1749228943182" duration="921000" />
+      <workItem from="1749320389882" duration="25000" />
+      <workItem from="1749320589585" duration="9000" />
     </task>
     <servers />
   </component>

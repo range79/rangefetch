@@ -31,7 +31,7 @@ func getLinuxDistro() string {
 		if strings.HasPrefix(line, "ID=") {
 
 			val := strings.TrimPrefix(line, "ID=")
-			val = strings.Trim(val, `"`)
+			val = strings.Trim(val, "")
 			return val
 		}
 	}
